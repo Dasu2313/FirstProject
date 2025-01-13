@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/TT Likes/TT-Lakes-Regular.ttf') format('truetype'); 
+    font-weight: 400; 
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TT Lakes';
+    src: url('/TT Likes/TT-Lakes-Regular.otf') format('opentype'); 
+    font-weight: 700; 
+    font-style: normal;
+  }
+
+body {
+    font-family: 'TT Lakes', Arial, sans-serif;
+    background-color: #F8F8F8;
+    margin: 0 0;
+    color: #1B1C21;
+}
+
+.header {
+    height: 88px;
+    background-color: #FFFFFF;
+    display: flex;
+    border-bottom: 1px solid #d9fff5;
+    justify-content: space-between;
+}
+
+.button {
+    display: flex;
+    cursor: pointer;
+    background-color:#FF3E79;
+    color: #FF3E79;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-in{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.header-in__divOne{
+    align-items: center;
+    width: 190px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-in_s_divTwo{
+    margin-right: 20px;
+    align-items: center;
+    width: 130px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.services-wrapper__title{
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    background: url(highlight.svg) no-repeat;
+    padding-left: 16px;
+}
+
+.wrapper__nav {
+    display: none;
+}
+
+.buttonOne {
+    cursor: pointer;
+    border: none; 
+    padding: 0; 
+    background: none; 
+  }
+  
+
+.navigation{
+    margin: left 0;
+    display: flex;
+    margin-left: 16px;
+}
+
+.navigation__button{
+height: 40px;
+white-space: nowrap;
+background: none;
+border: none;
+cursor: pointer;
+margin-bottom: 10px;
+color: #7E7E82;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0.2px;
+padding-left: 16px;
+padding: 0 12px;
+}
+
+.navigation__button--active{
+    border: 2px solid #B8FFEC;
+    background: white;
+    border-radius: 6px;
+}
+
+.content__text-block {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+}
+    
+.content__read-more::before{
+    content: '';
+    display: inline-block;
+    background: url(iconexp.svg) no-repeat;
+    width: 10px;
+    height: 10px;
+}
+
+.content__image{
+    width: 100%;
+    height: auto;
+}
+
+.navigation__gradient{
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    background-image: linear-gradient(90deg,#F8F8F800, #F8F8F8ff);
+}
+
+.button__telephone, .button__sms, .button__akk, .divider,.content__text-block__p, .content__text-block__two {
+    display: none;
+}
+
+
+@media (min-width: 768px) and (max-width:1023px) {
+    .button__telephone, .button__sms, .button__akk, .divider, .content__text-block__p{
+        display: inherit;
+    }
+    .header-in_s_divTwo{
+        width: 300px;
+    }
+    .content{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .content__text-block{
+        width: 310px;
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: #1B1C21;
+    }
+}
+
+@media (min-width:1024px){
+    .button__sms--nav, .button__search--nav,.divider,.content__text-block__p, .content__text-block__two {
+        display: inherit;
+    }
+    .header{
+        display: none;
+    }
+    .wrapper__nav {
+        display: inherit;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .wrapper__nav-button {
+        width: 400px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .wrapper__nav__textcontent{
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+        white-space: nowrap;
+    }
+    .content{
+        margin: 0 auto;
+        width: 1000px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .content__image{
+        width: 530px;
+        height: 305px;
+    }
+    .content__text-block{
+        width: 490px;
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: #1B1C21;
+    }
+    .content__text-block__p::after {
+        content: ', что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.';
+
+    }
+}
