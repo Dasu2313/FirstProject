@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'TT Lakes';
-    src: url('../TT Likes/TT-Lakes-Regular.ttf') format('truetype'); 
+    src: url('TT Lakes/TT-Lakes-Regular.ttf') format('truetype'); 
     font-weight: 400; 
     font-style: normal;
   }
   
   @font-face {
     font-family: 'TT Lakes';
-    src: url('../TT Likes/TT-Lakes-Regular.otf') format('opentype'); 
+    src: url('TT Lakes/TT-Lakes-Regular.otf') format('opentype'); 
     font-weight: 700; 
     font-style: normal;
   }
