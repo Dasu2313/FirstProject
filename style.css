@@ -12,6 +12,10 @@
     font-style: normal;
   }
 
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+
 body {
     font-family: 'TT Lakes', Arial, sans-serif;
     background-color: #F8F8F8;
@@ -87,6 +91,8 @@ body {
     margin: left 0;
     display: flex;
     margin-left: 16px;
+    overflow: scroll;
+    overflow-y: hidden;
 }
 
 .navigation__button{
@@ -220,5 +226,9 @@ padding: 0 12px;
     .content__text-block__p::after {
         content: ', что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.';
 
+    }
+    .navigation{
+        display: flex;
+      flex-wrap: wrap;
     }
 }
